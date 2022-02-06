@@ -16,8 +16,8 @@
 
 #first-page
 {
-    background-color: #202020;
     position: static;
+    height: 581px;;
     
 }
 
@@ -115,6 +115,87 @@
 
 #second-page 
 {
-    background-color: #BD272C;
+    background-color: #ffffff;
+    position: static;
+    top: 461px;
+    left: 0px;
+}
+
+.img-window
+{
+    object-fit: cover;
+    width: 33.33%;
+    height: auto;
+    display: inline;
     position: relative;
+    border: 0px;
+    padding: 0px;
+    float: left;
+
+}
+.column 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#image-window-container
+{
+    text-align: center;
+    margin: 0px;
+}
+
+/*
+    width: 461px; 
+    height: 589px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0%;   
+    transition: opacity ease-in 0.3s;
+    background-color: #BD272C;
+*/
+
+.des-container
+{
+    position: relative;  
+    top: -750px;
+    display: inline;
+    text-align: center;
+}
+
+.window-des
+{
+    width: 33.33%; 
+    height: 550px;
+    position: relative;
+    display: table;
+    float: left;
+    background-color:#606060a4;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 0%;
+    transition: opacity ease-in 0.3s; 
+}
+
+.window-des:hover 
+{
+    opacity: 100%;
+}
+
+.window-title
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.window-subtitle 
+{
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
 }
