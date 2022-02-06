@@ -5,24 +5,30 @@
     position: fixed;
     left: 71px;
     top: 50px;
-    font-size: 50px;
+    font-size: 30px;
+    transition: color ease-in 0.3s; 
+}
+
+.dose-title:hover
+{
+    color: #252525;
 }
 
 #first-page
 {
-    background-color: #ffffff;
+    background-color: #202020;
     position: static;
+    
 }
 
 #title 
 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
+    font-size: 80px;
     color: #202020;
     position: absolute;
-    top: 259px;
-    left: 71px;
-    
+    top: 249px;
+    margin-left: 71px;    
 }
 
 #stinger 
@@ -32,14 +38,23 @@
     font-size: 20px;
     color: #515151;
     position: absolute;
-    top: 375px;
-    left: 350px;
+    top: 355px;
+    margin-left: 350px;
     object-position: 35% 100%;
+}
+
+#xii-subtitle
+{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #6A6A6A;
+    position: relative;
+    top: 450px;
+    left: 71px;
 }
 
 #tnalak-img-container 
 {
-    overflow: hidden;
     position: absolute;
     top: 0px;
     right: 0px; 
@@ -52,28 +67,9 @@
     object-fit: cover;
     width: 461px; 
     height: 589px;
-    opacity: 100%;
-    transition: ease-in 0.3s;
-}
-
-/* background color for tnalak containter */ 
-
-.fill 
-{
-    position: absolute;
-    width: 461px; 
-    height: 589px;
-    background-color: #BD272C;
-    top: 0px;
-    right: 0px;
 }
 
 /* this is an animation*/
-
-#tnalak-container #tnalak-img:hover
-{
-    opacity: 0%;
-}
 
 #tnalak-container #tnalak-hover-container:hover
 {
@@ -92,16 +88,10 @@
     background-color: #BD272C;
 }
 
-/*
-#tnalak-container #tnalak-hover-container:hover
-{
-    opacity: 100%;    
-}
-*/
 #tnalak-hover-title 
 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
+    font-size: 80px;
     text-align: right;
     line-height: 1;
     color: #ffffff;                    
@@ -121,4 +111,10 @@
     position: relative;     
     padding-top: 0px;
     padding-right: 25px; 
+}
+
+#second-page 
+{
+    background-color: #BD272C;
+    position: relative;
 }
