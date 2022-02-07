@@ -1,244 +1,204 @@
-body
-{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.dose-title 
-{
-    color: #7E7E7E;
-    font-family: 'Bebas Neue', cursive;
-    position: fixed;
-    left: 71px;
-    top: 50px;
-    font-size: 30px;
-    transition: color ease-in 0.3s; 
+body {
+  font-weight: 400;
 }
 
-.dose-title:hover
-{
-    color: #252525;
+header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
 }
 
-#first-page
-{
-    position: static;
-    height: 581px;;
-    
+#hero-content {
+  padding: 150px;
+  flex: 3;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#title 
-{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    color: #202020;
-    position: absolute;
-    top: 249px;
-    margin-left: 71px;    
+#hero-image {
+  flex: 2;
+  background-image: url("./images/tnalak.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#stinger 
-{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-size: 20px;
-    color: #515151;
-    position: absolute;
-    top: 355px;
-    margin-left: 350px;
-    object-position: 35% 100%;
+.logo {
+  font-size: 80px;
+  line-height: 96px;
+  color: #7e7e7e;
+  letter-spacing: 1rem;
+  font-family: "Bebas Neue";
 }
 
-#xii-subtitle
-{
-    font-family: 'Open Sans';
-    font-size: 15px;
-    color: #6A6A6A;
-    position: relative;
-    top: 450px;
-    left: 71px;
+h1 {
+  text-transform: uppercase;
+  color: #202020;
+  font-size: 150px;
+  line-height: 180px;
+  font-family: "Bebas Neue";
 }
 
-#tnalak-img-container 
-{
-    position: absolute;
-    top: 0px;
-    right: 0px; 
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  color: #515151;
+  line-height: 46.88px;
+  font-family: "Roboto";
+  text-align: right;
 }
 
-#tnalak-img
-{
-    position: relative;
-    right: 0px;
-    object-fit: cover;
-    width: 461px; 
-    height: 589px;
+h3 {
+  font-family: "Open Sans";
+  color: #6a6a6a;
+  font-size: 30px;
+  line-height: 40.85px;
 }
 
-/* this is an animation*/
-
-#tnalak-container #tnalak-hover-container:hover
-{
-    opacity: 100%;
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-basis: 1;
 }
 
-#tnalak-hover-container
-{
-    width: 461px; 
-    height: 589px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    opacity: 0%;   
-    transition: opacity ease-in 0.3s;
-    background-color: #BD272C;
+main .img {
+  height: 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#tnalak-hover-title 
-{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    text-align: right;
-    line-height: 1;
-    color: #ffffff;                    
-    position: relative;
-    padding-top: 180px;
-    padding-left: 25px;
-    padding-right: 25px;
+#img1 {
+  background-image: url("./images/young-fruit.jpg");
+  background-position: center;
 }
 
-#tnalak-hover-subtitle 
-{
-    font-family: 'Open sans';
-    font-style: bold;
-    text-align: right;
-    font-size: 20px;
-    color: #ffffff;
-    position: relative;     
-    padding-top: 0px;
-    padding-right: 25px; 
+#img2 {
+  background-image: url("./images/Remini20220205130614443.jpg");
 }
 
-#second-page 
-{
-    background-color: #ffffff;
-    position: static;
-    top: 461px;
-    left: 0px;
-    height: auto;
+#img3 {
+  background-image: url("./images/FB_IMG_1599039450676.jpg");
+  background-position: right 35% bottom 45%;
 }
 
-/*image*/
-.img-window
-{
-    object-fit: cover;
-    width: 33.33%;
-    height: auto;
-    border: 0px;
-    padding: 0px;
-    display: block;
-    float: left;
-    position: relative;
-
+#quote {
+  height: 100vh;
+  width: 100%;
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
 }
 
-.section-container 
-{
-    padding: 0px;
-    margin: 0px;
-    width: auto;
-    height: auto;
-    display: inline;
-    position: relative;
+#quote p {
+  font-family: "Open Sans";
+  font-size: 100px;
+  line-height: 138.18px;
+  color: #2f2f2f;
+  font-weight: 700;
+  padding: 100px;
 }
 
-#image-window-container
-{
-    text-align: center;
-    margin: 0px;
-    height: auto;
-    width: auto;
+.red {
+  color: #bd272c;
 }
 
-.overlay
-{
-    position: absolute;
-    left: 0px;
-    width: 33.33%; 
-    max-height: auto; /*might change this to auto*/
-    display: inline;
-    background-color:#606060a4;
-    padding-top: 200px;
-    padding-left: auto;
-    padding-right: auto;
-    margin-bottom: 0px;
-    opacity: 0%;
-    transition: opacity ease-in 0.3s; 
-    text-align: center;
-    float: left;
+/* #quotation {
+  position: absolute;
+  font-family: "Bebas Neue" !important;
+  font-size: 1000px !important;
+  font-weight: 400;
+  color: #c4c4c4 !important;
+  /* top: 200px !important; */
+/* } */
+
+aside {
+  height: 100vh;
+  width: 100%;
+  background-color: #bd272c;
+  color: white;
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  justify-content: end;
 }
 
-#overlay-1
-{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%; 
-    height: 100%; /*might change this to auto*/
-    display: inline;
-    background-color:#606060a4;
-    padding-top: 200px;
-    padding-left: auto;
-    padding-right: auto;
-    margin-bottom: 0px;
-    opacity: 0%;
-    transition: opacity ease-in 0.3s; 
-    text-align: center;
-    float: left;
+h4 {
+  font-family: "Bebas Neue";
+  font-size: 150px;
+  line-height: 180px;
 }
 
-.section-container #overlay-1:hover
-{
-    opacity: 100%;
+aside p {
+  font-family: "Open Sans";
+  font-size: 50px;
+  line-height: 68.09px;
 }
 
-/*
-
-*/
-
-.section-container:hover .overlay
-{
-    opacity: 100%;
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 100px;
+  display: flex;
 }
 
-.window-title
-{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    color: #000;
-    line-height: 1;
-    text-align: center;
+footer #branding {
+  flex: 1;
 }
 
-.window-subtitle 
-{
-    font-family: 'Open Sans';
-    font-style: bold;
-    font-size: 20px;
-    color: #000;
-    display: block;
-    text-align: center;
+#brand-name {
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  line-height: 96px;
+  padding-bottom: 50px;
+  display: block;
 }
 
-#third-page
-{
-    position: static;
-    top: 0px;
-    margin-top: 0px;
+#brand-text {
+  color: #aaaaaa;
+  font-family: "Open Sans";
+  font-size: 30px;
+  line-height: 41px;
 }
 
-#quote 
-{
-    margin-top: 0px;
-    padding-top: 0px;
+#brand-highlight {
+  /* /* font-family: "Bebas Neue"; * */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer #links {
+  flex: 1;
+}
+
+#link-title,
+li {
+  font-family: "Open Sans";
+  font-size: 30px;
+  line-height: 40.85px;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+li {
+  padding: 10px 0;
+  color: #aaaaaa;
 }
