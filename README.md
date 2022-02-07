@@ -1,5 +1,6 @@
 # etech region 12 wbsite
- School project
+
+School project
 
 Henlo! website made by patatas na coder
 
