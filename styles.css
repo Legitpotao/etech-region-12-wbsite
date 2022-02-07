@@ -1,3 +1,9 @@
+body
+{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 .dose-title 
 {
     color: #7E7E7E;
@@ -119,66 +125,88 @@
     position: static;
     top: 461px;
     left: 0px;
+    height: auto;
 }
 
+/*image*/
 .img-window
 {
     object-fit: cover;
     width: 33.33%;
     height: auto;
-    display: inline;
-    position: relative;
     border: 0px;
     padding: 0px;
+    display: block;
     float: left;
+    position: relative;
 
 }
-.column 
+
+.section-container 
 {
     padding: 0px;
     margin: 0px;
+    width: auto;
+    height: auto;
+    display: inline;
+    position: relative;
 }
 
 #image-window-container
 {
     text-align: center;
     margin: 0px;
+    height: auto;
+    width: auto;
+}
+
+.overlay
+{
+    position: absolute;
+    left: 0px;
+    width: 33.33%; 
+    max-height: auto; /*might change this to auto*/
+    display: inline;
+    background-color:#606060a4;
+    padding-top: 200px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 0px;
+    opacity: 0%;
+    transition: opacity ease-in 0.3s; 
+    text-align: center;
+    float: left;
+}
+
+#overlay-1
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%; 
+    height: 100%; /*might change this to auto*/
+    display: inline;
+    background-color:#606060a4;
+    padding-top: 200px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 0px;
+    opacity: 0%;
+    transition: opacity ease-in 0.3s; 
+    text-align: center;
+    float: left;
+}
+
+.section-container #overlay-1:hover
+{
+    opacity: 100%;
 }
 
 /*
-    width: 461px; 
-    height: 589px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    opacity: 0%;   
-    transition: opacity ease-in 0.3s;
-    background-color: #BD272C;
+
 */
 
-.des-container
-{
-    position: relative;  
-    top: -750px;
-    display: inline;
-    text-align: center;
-}
-
-.window-des
-{
-    width: 33.33%; 
-    height: 550px;
-    position: relative;
-    display: table;
-    float: left;
-    background-color:#606060a4;
-    text-align: center;
-    padding-top: 200px;
-    opacity: 0%;
-    transition: opacity ease-in 0.3s; 
-}
-
-.window-des:hover 
+.section-container:hover .overlay
 {
     opacity: 100%;
 }
@@ -187,8 +215,9 @@
 {
     font-family: 'Bebas Neue', cursive;
     font-size: 60px;
-    color: #ffffff;
+    color: #000;
     line-height: 1;
+    text-align: center;
 }
 
 .window-subtitle 
@@ -196,6 +225,20 @@
     font-family: 'Open Sans';
     font-style: bold;
     font-size: 20px;
-    color: #ffffff;
+    color: #000;
     display: block;
+    text-align: center;
+}
+
+#third-page
+{
+    position: static;
+    top: 0px;
+    margin-top: 0px;
+}
+
+#quote 
+{
+    margin-top: 0px;
+    padding-top: 0px;
 }
